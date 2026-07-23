@@ -9,8 +9,8 @@
       name="description"
       content="ブラウザから直接AndroidデバイスへAPKのインストールとファイル転送を行うWebUSB ADBツール"
     />
-    <script type="module" crossorigin src="/webadb-tool/assets/index-BZm1bFka.js"></script>
-    <link rel="stylesheet" crossorigin href="/webadb-tool/assets/index-CRlCJZf1.css">
+    <script type="module" crossorigin src="/webadb-tool/assets/index-BGFNQNjj.js"></script>
+    <link rel="stylesheet" crossorigin href="/webadb-tool/assets/index-CqRM0qsZ.css">
   </head>
   <body>
     <div id="app">
@@ -167,20 +167,20 @@
               <button class="shortcut-btn shortcut-btn--danger" id="rebootBtn" type="button" disabled>再起動</button>
             </div>
           </section>
-
-          <section class="console card--full" aria-label="実行ログ">
-            <div class="console__bar">
-              <span class="dot dot--red"></span>
-              <span class="dot dot--yellow"></span>
-              <span class="dot dot--green"></span>
-              <span class="console__title">log</span>
-              <button class="console__clear" id="clearLog" type="button">clear</button>
-            </div>
-            <div class="console__body" id="log">
-              <p class="console__line console__line--info">WebUSB ADB console — 右上の「デバイスを接続」から開始してください。</p>
-            </div>
-          </section>
         </main>
+
+        <footer class="console" id="consoleFooter" role="contentinfo" aria-label="コンソールログ">
+          <div class="console__bar">
+            <span class="dot dot--red"></span>
+            <span class="dot dot--yellow"></span>
+            <span class="dot dot--green"></span>
+            <span class="console__title">Console</span>
+            <button class="console__clear" id="clearLog" type="button">clear</button>
+          </div>
+          <div class="console__body" id="log">
+            <p class="console__line console__line--info">WebUSB ADB console — 右上の「デバイスを接続」から開始してください。</p>
+          </div>
+        </footer>
       </div>
   </body>
 </html>
